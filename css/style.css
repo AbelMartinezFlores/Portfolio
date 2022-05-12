@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 :root {
     --first-color: #1F1F1F;
     --second-color: #131313;
-    --first-color-light: white;
-    --color-header: #4F92FF;
+    --circle: #1C1C1C;
+    --first-color-contrast: white;
+    --color-header: #7462E0;
     --leter-first-color: white;
     --leter-second-color: black;
-    --tipografia-principal: 'Raleway', sans-serif;
-    --tipografia-secundaria: 'Red Hat Mono', monospace;
+    --tipografia-principal: 'Roboto', sans-serif;
+    ;
 }
 
 
@@ -270,7 +271,7 @@ header>h1 {
     bottom: -50%;
     width: 100%;
     height: 100%;
-    background-color: #1C1C1C;
+    background-color: var(--circle);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -387,7 +388,7 @@ header>h1 {
     align-items: center;
     text-align: center;
     padding: .25rem;
-    border: 1px solid var(--first-color-light);
+    border: 1px solid var(--first-color-contrast);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -419,7 +420,7 @@ header>h1 {
 }
 
 .grups {
-    border: 1px solid var(--first-color-light);
+    border: 1px solid var(--first-color-contrast);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -487,7 +488,7 @@ form {
     text-align: center;
     width: 90%;
     max-width: 30rem;
-    border: 1px dashed var(--first-color-light);
+    border: 1px dashed var(--first-color-contrast);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -504,13 +505,13 @@ form>p {
 input {
     font-size: 1.25rem;
     width: 80%;
-    color: var(--first-color-light);
+    color: var(--first-color-contrast);
     outline: none;
     background-color: transparent;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-bottom: 1px solid var(--first-color-light);
+    border-bottom: 1px solid var(--first-color-contrast);
     padding-top: 10px;
     margin-bottom: 1rem;
     transition: 0.4s border;
@@ -521,17 +522,17 @@ textarea {
     resize: vertical;
     outline: none;
     background-color: transparent;
-    border: 1px solid var(--first-color-light);
+    border: 1px solid var(--first-color-contrast);
     min-height: 60px;
     max-height: 300px;
-    color: var(--first-color-light);
+    color: var(--first-color-contrast);
 }
 
 input:focus,
 input:hover,
 textarea:hover,
 textarea:focus {
-    border: 1px dashed var(--first-color-light);
+    border: 1px dashed var(--first-color-contrast);
 }
 
 
@@ -596,5 +597,17 @@ textarea:focus {
     #places,
     #qualification {
         width: 45%;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+     :root {
+        --first-color: white;
+        --second-color: #EEE;
+        --circle: #ccc;
+        --first-color-contrast: black;
+        --leter-first-color: black;
+        --leter-second-color: white;
+        --tipografia-principal: 'Raleway', sans-serif;
     }
 }
