@@ -5,10 +5,11 @@
     --circle: #1C1C1C;
     --first-color-contrast: white;
     --color-header: #7462E0;
+    --underlined: rgba(255, 255, 255, 0.301);
     --leter-first-color: white;
     --leter-second-color: black;
     --tipografia-principal: 'Roboto', sans-serif;
-    ;
+    
 }
 
 
@@ -218,7 +219,7 @@ header>h1 {
 }
 
 #information h2 {
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: var(--underlined);
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -605,6 +606,7 @@ textarea:focus {
         --first-color: white;
         --second-color: #EEE;
         --circle: #ccc;
+        --underlined: rgb(155 146 146) ;
         --first-color-contrast: black;
         --leter-first-color: black;
         --leter-second-color: white;
