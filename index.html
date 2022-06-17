@@ -25,19 +25,19 @@
         <div>
             <i class="fa-solid fa-bars" id="menu"></i>
         <label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox">
             <span class="slider"></span>
         </label>
         </div>
     </header>
 
     <div id="app">
-        <section id="section1" class="sections">
-            <div id="information">
+        <section id="section1" class="sections flex-Center">
+            <div id="information" class="flex-Center">
                 <h2>Abel Martinez</h2>
-                <p>Estudiante Ingeniería Multimedia apasionado por el diseño</p>
+                <p>Estudiante de Ingeniería Multimedia apasionado por el diseño</p>
                 <span>Front-end Developer</span>
-                <button>Saber más</button>
+                <button > <a href="#about">Saber más</a> </button>
                 <div class="rrss">
                     <a href="https://github.com/AbelMartinezFlores" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/abel-mart%C3%ADnez-4a4539205/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -48,17 +48,17 @@
             <div id="circle-banner">
         </section>
 
-        <section id="about" class="sections">
+        <section id="about" class="sections flex-Center">
 
             <div id="dates">
                 <h3>Sobre mí</h3>
-                <p>Soy Abel Martinez Flores y soy estudiande de Ingeniería Multimedia en la Universidad de Alicante.</p>
+                <p>Soy Abel Martinez Flores estudiande de Ingeniería Multimedia en la Universidad de Alicante.</p>
                 <br>
                 <p>Me gustaría dedicarme al diseño de páginas Webs y seguir formandome en el sector</p>
                 <br>
-                <p>Casi todo lo que he aprendido ha sido de manera autodidacta ya que en mi carrera aun no se ha abordado</p>
+                <p>Todo lo que he aprendido ha sido de manera autodidacta</p>
             </div>
-            <div id="hobbies">
+            <div id="hobbies" class="flex-Center">
                 <h3>Hobbies</h3>
                 <div class="hobbies-icons">
                     <img src="./svg/cascos.svg" alt="musica">
@@ -88,15 +88,21 @@
 
                 <div id="qualification">
                     <h4>Asignaturas con matrícula de honor</h4>
-                    <div id="mh">
-                        <div>
+                    <div id="mh" class="flex-Center">
+                        <div >
                             <p>Estructura de Datos y Algoritmia</p>
+                        </div>
+                        <div>
+                            <p>Sistemas Distribuidos</p>
                         </div>
                         <div>
                             <p>Fundamentos de Programación I</p>
                         </div>
                         <div>
                             <p>Fundamentos de Programación II</p>
+                        </div>
+                        <div>
+                            <p>Sistemas de Bases de Datos Multimedia</p>
                         </div>
                         <div>
                             <p>Sistemas Operativos</p>
@@ -116,24 +122,74 @@
 
         </section>
 
-        <section id="habilities" class="sections">
+        <section id="habilities" class="sections flex-Center">
             <h3>Habilidades web</h3>
             <div class="grups">
                 <h4>Front-end</h4>
-                <div class="icons">
-                    <img src="./svg/html.svg" alt="html5">
-                    <img src="./svg/css.svg" alt="css3">
-                    <img src="./svg/js.svg" alt="javascript">
-                    <img src="./svg/react.svg" alt="react">
+                <div class="icons flex-Center">
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(246, 97, 4, 0.2);">
+                            <img src="https://cdn.sanity.io/images/uc0w8soq/production/31f11147f89dbd855a9b948e2ce643ea2f41c0a9-480x480.png" alt="HTML">
+                        </div>
+                        <p class="flex-Center">HTML</p>
+                    </div>
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(102, 211, 250, 0.2);">
+                            <img src="https://cdn.sanity.io/images/uc0w8soq/production/107574d887f1c07c9fbea0704de7f293e244a8f3-480x480.png" alt="CSS">
+                        </div>
+                        <p class="flex-Center">CSS</p>
+                    </div>
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(255, 214, 0, 0.2);">
+                            <img src="https://cdn.sanity.io/images/uc0w8soq/production/66bbf9242b1ccffebb5d46f376f5036b527fad48-480x480.png" alt="Javascript">
+                        </div>
+                        <p class="flex-Center">Javascript</p>
+                    </div>
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(175, 21, 247, 0.2);">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="Bootstrap">
+                        </div>
+                        <p class="flex-Center">Bootstrap</p>
+                    </div>
+
                 </div>
             </div>
 
             <div class="grups">
                 <h4>Back-end</h4>
-                <div class="icons">
-                    <img src="./svg/node.svg" alt="node">
-                    <img src="./svg/mongo.svg" alt="mongodb">
-                    <img src="./svg/mysql.svg" alt="mysql">
+                <div class="icons flex-Center">
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(60, 135, 58, 0.2);">
+                            <img src="https://cdn.sanity.io/images/uc0w8soq/production/d8c8025b1695a3f14f849b99afc71d917ef40813-480x480.png" alt="NodeJS">
+                        </div>
+                        <p class="flex-Center">NodeJS</p>
+                    </div>
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(35, 194, 29, 0.2);">
+                            <img src="https://www.codeserk.es/media/sm/78de4de6afa944e23633fb511238bc64.png" alt="MongoDB">
+                        </div>
+                        <p class="flex-Center">MongoDB</p>
+                    </div>
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(102, 211, 250, 0.2);">
+                            <img src="https://planet.mysql.com/images/planet-logo.svg" alt="mysql">
+                        </div>
+                        <p class="flex-Center">Mysql</p>
+                    </div>
+
+                    <div class="flex-Center" style="opacity: 1;">
+                        <div class="flex-Center skill-item" style="background-color: rgba(248, 84, 28, 0.2);">
+                            <img src="https://cdn.sanity.io/images/uc0w8soq/production/a804a741fb26f6c236c73086a87cfc9f64106401-480x480.png" alt="Git">
+                        </div>
+                        <p class="flex-Center">Git</p>
+                    </div>
+
                 </div>
             </div>
 
