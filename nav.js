@@ -9,7 +9,7 @@ function modoOscuro(){
 }
 
 function modoClaro(){
-    style.setProperty('--first-color','#ebe1c9');
+    style.setProperty('--first-color','white');
     style.setProperty('--second-color','#EEE');
     style.setProperty('--circle','#ccc');
     style.setProperty('--first-color-contrast','black');
@@ -52,10 +52,17 @@ window.addEventListener("scroll", ()=>{
 //menu para nav pequeño con animacion
 const menu  = document.querySelector('#menu');
 const nav = document.querySelector('.nav-link');
+const item_nav = document.querySelector('.nav-link>li>a');
+console.log(item_nav)
 
 menu.addEventListener("click", () =>{
     nav.classList.toggle("open");
 });
+
+function quitarNav(){
+    if(nav.classList.contains("open"))
+        nav.classList.toggle("open");
+}
 
 /**
  * TODO: arreglar nav para que se quite al pulsar sobre seccion

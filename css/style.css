@@ -9,11 +9,9 @@
     --leter-first-color: white;
     --leter-second-color: black;
     --tipografia-principal: 'Roboto', sans-serif;
-    
 }
 
 /*Medidas generales*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,7 +44,6 @@ body {
 }
 
 /*css de los botones de la web*/
-
 button {
     margin: 1rem;
     background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
@@ -89,8 +86,7 @@ button > a{
 }
 
 
-/*Todo el contenido de la web se encuentra dentro de este div*/
-
+/*el contenido de la web se encuentra dentro de este div*/
 #app {
     min-width: 100vw;
     min-height: 100vh;
@@ -106,12 +102,11 @@ button > a{
 .sections {
     min-height: 100vh;
     width: 100%;
-    padding: 140px 1em 0px 1em;
+    padding: 80px 1em 0px 1em;
 }
 
 
 /*Tamaño de los titulos*/
-
 h2 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -127,7 +122,6 @@ h4 {
 
 
 /*Barra de navegacion*/
-
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -143,9 +137,8 @@ h4 {
 
 
 /*Aqui empieza el css del header*/
-
 header {
-    min-height: 100px;
+    min-height: 80px;
     z-index: 2;
     color: var(--color);
     position: fixed;
@@ -203,7 +196,6 @@ header>h1 {
 
 
 /*Aqui empiezo a estilizar el banner*/
-
 #section1 {
     flex-wrap: wrap;
     row-gap: 1rem;
@@ -280,7 +272,6 @@ header>h1 {
 
 
 /*Seccion sobre mi*/
-
 #about {
     flex-wrap: wrap;
     column-gap: 1rem;
@@ -318,7 +309,6 @@ header>h1 {
 
 
 /*Seccion para los estudios*/
-
 #studies {
     display: flex;
     flex-direction: column;
@@ -409,12 +399,6 @@ header>h1 {
 }
 
 .grups {
-    /*border: 1px solid var(--first-color-contrast);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;*/
     width: 90%;
     margin: 1rem 0;
     max-width: 400px;
@@ -453,18 +437,13 @@ header>h1 {
                 margin-top: .5rem;
             }
 
-
 #habilities li {
     list-style: none;
     margin: 1rem;
     font-size: 1.25rem;
 }
 
-
-
-
 /*Para la seccion de contacto*/
-
 #contact {
     display: flex;
     flex-direction: column;
@@ -530,7 +509,6 @@ textarea:focus {
 
 
 /*Media queries*/
-
 @media all and (max-width: 850px) {
     /*Para que el logo aparezca cuando se abre nav*/
     header>h1 {
@@ -583,6 +561,10 @@ textarea:focus {
     #hobbies {
         width: 50%;
     }
+    
+}
+
+@media all and (min-width:1100px){
     /*para la seccion de estudios*/
     #studies>div {
         flex-direction: row;
@@ -593,21 +575,20 @@ textarea:focus {
     }
 }
 
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
      :root {
         --first-color: #ebe1c9;
         --second-color: #EEE;
-        --circle: #ccc;
+        --circle: #d4c9af;
         --underlined: rgb(155 146 146) ;
         --first-color-contrast: black;
         --leter-first-color: black;
         --leter-second-color: white;
         --tipografia-principal: 'Raleway', sans-serif;
     }
-}
+}*/
 
 .switch {
-    /* --moon-mask: ; */
      font-size: 15px;
      position: relative;
      display: inline-block;
@@ -617,7 +598,7 @@ textarea:focus {
     }
     
     
-    /* The slider */
+    /* el slider */
     .slider {
      position: absolute;
      cursor: pointer;
