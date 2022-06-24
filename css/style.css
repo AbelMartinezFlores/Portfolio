@@ -204,6 +204,7 @@ header>h1 {
 }
 
 #information {
+    text-align: center;
     flex-direction: column;
     row-gap: 2rem;
 }
@@ -300,11 +301,14 @@ header>h1 {
 .hobbies-icons img {
     width: 125px;
     height: 125px;
-    margin: 2px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .hobbies-icons img:hover {
-    opacity: .5;
+    transform: scale(1.1);
+    opacity: .7;
 }
 
 
@@ -633,3 +637,14 @@ textarea:focus {
      background: #303136;
      box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
     }
+
+
+
+
+
+
+
+
+
+
+    

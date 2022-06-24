@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel=stylesheet type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <script src="https://kit.fontawesome.com/5f15527a0f.js" crossorigin="anonymous"></script>
 
 </head>
@@ -62,11 +63,31 @@
             <div id="hobbies" class="flex-Center">
                 <h3>Hobbies</h3>
                 <div class="hobbies-icons">
-                    <img src="./svg/cascos.svg" alt="musica">
-                    <img src="./svg/cine.svg" alt="cine">
-                    <img src="./svg/gym.svg" alt="gym">
-                    <img src="./svg/codigo.svg" alt="codigo">
-                    <img src="./svg/juegos.svg" alt="juegos">
+                    <img src="./svg/cascos.svg" alt="musica" onclick=" showModal(
+                        'Kyotto',
+                        'img/kyotto.png',
+                        'My own',
+                        'La musica es de las cosas que mas me relaja. Conocí al artista con su canción My own. Desde ese dia es mi cantante favorito. Pero no solo le escucho a el, escucho un poco de todos los estilos musicales.'
+
+                    );">
+                    <img src="./svg/cine.svg" alt="cine" onclick=" showModal(
+                        'Avatar', 
+                        'img/avatar.jpg',
+                        'avatar',
+                        'Esta pelicula la vi de pequeño en el colegio. Desde entonces ha sido mi pelicula favorita por la historia, visuales, la innovacion que hizo en su momento. La habre visto mas de 10 veces'
+                    );">
+                    <img src="./svg/gym.svg" alt="gym" onclick=" showModal(
+                        'GYM',
+                        'img/gym.jpg',
+                        'Cbum',
+                        'Hace tiempo me apunte al gimnasio con mi novia y ha sido una de las mejores ideas de mi vida. A parte de perder peso y estar mas sano, ahora puedo realizar muchas actividades que antes no podia al cansarme tan rapido. Poco a poco voy mejorando mi fisico y disciplina.'
+                    );">
+                    <img src="./svg/juegos.svg" alt="juegos" onclick=" showModal(
+                        'Dragon Quest',
+                        'img/dragonquest.jpg',
+                        'Dragon Quest XI',
+                        'Dragon Quest XI: Ecos de un Pasado Perdido es mi juego favorito actualmente. Siempre he sido fan de la saga Dragon Quest, pero este juego me fascino en todos los sentidos. Como se puede apreciar mi genero preferido es el RPG, aunque me gustan casi todos los generos.'
+                    );">
                 </div>
             </div>
         </section>
@@ -232,5 +253,6 @@
 
 </body>
 <script src="./nav.js" type="text/javascript"></script>
+<script src="./modal.js" type="text/javascript"></script>
 
 </html>
