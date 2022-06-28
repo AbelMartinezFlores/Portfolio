@@ -18,7 +18,6 @@
         <ul class="nav-link">
             <li> <a href="#top" onclick="quitarNav()">Inicio</a></li>
             <li><a href="#about" onclick="quitarNav()">Datos</a></li>
-            <li><a href="#studies" onclick="quitarNav()">Estudios</a></li>
             <li><a href="#habilities" onclick="quitarNav()">Habilidades</a></li>
             <li><a href="#contact" onclick="quitarNav()">Contacto</a></li>
             <!--<li><a href="#proyects" onclick="quitarNav()">Proyectos</a></li>-->
@@ -52,51 +51,50 @@
 
         <section id="about" class="sections flex-Center">
 
-            <div id="dates">
-                <h3>Sobre mí</h3>
-                <p>Soy Abel Martinez Flores estudiande de Ingeniería Multimedia en la Universidad de Alicante.</p>
-                <br>
-                <p>Me gustaría dedicarme al diseño de páginas Webs y seguir formandome en el sector</p>
-                <br>
-                <p>Todo lo que he aprendido ha sido de manera autodidacta</p>
-            </div>
-            <div id="hobbies" class="flex-Center">
-                <h3>Hobbies</h3>
-                <div class="hobbies-icons">
-                    <img src="./svg/cascos.svg" alt="musica" onclick=" showModal(
-                        'Kyotto',
-                        'img/kyotto.jpg',
-                        'My own',
-                        'La musica es de las cosas que mas me relaja. Conocí al artista con su canción My own. Desde ese dia es mi cantante favorito. Pero no solo le escucho a el, escucho un poco de todos los estilos musicales.'
-
-                    );">
-                    <img src="./svg/cine.svg" alt="cine" onclick=" showModal(
-                        'Avatar', 
-                        'img/avatar.jpg',
-                        'avatar',
-                        'Esta pelicula la vi de pequeño en el colegio. Desde entonces ha sido mi pelicula favorita por la historia, visuales, la innovacion que hizo en su momento. La habre visto mas de 10 veces'
-                    );">
-                    <img src="./svg/gym.svg" alt="gym" onclick=" showModal(
-                        'GYM',
-                        'img/gym.jpg',
-                        'Cbum',
-                        'Hace tiempo me apunte al gimnasio con mi novia y ha sido una de las mejores ideas de mi vida. A parte de perder peso y estar mas sano, ahora puedo realizar muchas actividades que antes no podia al cansarme tan rapido. Poco a poco voy mejorando mi fisico y disciplina.'
-                    );">
-                    <img src="./svg/juegos.svg" alt="juegos" onclick=" showModal(
-                        'Dragon Quest',
-                        'img/dragonquest.jpg',
-                        'Dragon Quest XI',
-                        'Dragon Quest XI: Ecos de un Pasado Perdido es mi juego favorito actualmente. Siempre he sido fan de la saga Dragon Quest, pero este juego me fascino en todos los sentidos. Como se puede apreciar mi genero preferido es el RPG, aunque me gustan casi todos los generos.'
-                    );">
+            <div>
+                <div id="dates">
+                    <h3>Sobre mí</h3>
+                    <p>Soy Abel Martinez Flores estudiande de Ingeniería Multimedia en la Universidad de Alicante.</p>
+                    <br>
+                    <p>Me gustaría dedicarme al diseño de páginas Webs y seguir formandome en el sector</p>
+                    <br>
+                    <p>Todo lo que he aprendido ha sido de manera autodidacta</p>
+                </div>
+                <div id="hobbies" class="flex-Center">
+                    <h3>Hobbies</h3>
+                    <div class="hobbies-icons">
+                        <img src="./svg/cascos.svg" alt="musica" onclick=" showModal(
+                            'Kyotto',
+                            'img/kyotto.jpg',
+                            'My own',
+                            'La musica es de las cosas que mas me relaja. Conocí al artista con su canción My own. Desde ese dia es mi cantante favorito. Pero no solo le escucho a el, escucho un poco de todos los estilos musicales.'
+    
+                        );">
+                        <img src="./svg/cine.svg" alt="cine" onclick=" showModal(
+                            'Avatar', 
+                            'img/avatar.jpg',
+                            'avatar',
+                            'Esta pelicula la vi de pequeño en el colegio. Desde entonces ha sido mi pelicula favorita por la historia, visuales, la innovacion que hizo en su momento. La habre visto mas de 10 veces'
+                        );">
+                        <img src="./svg/gym.svg" alt="gym" onclick=" showModal(
+                            'GYM',
+                            'img/gym.jpg',
+                            'Cbum',
+                            'Hace tiempo me apunte al gimnasio con mi novia y ha sido una de las mejores ideas de mi vida. A parte de perder peso y estar mas sano, ahora puedo realizar muchas actividades que antes no podia al cansarme tan rapido. Poco a poco voy mejorando mi fisico y disciplina.'
+                        );">
+                        <img src="./svg/juegos.svg" alt="juegos" onclick=" showModal(
+                            'Dragon Quest',
+                            'img/dragonquest.jpg',
+                            'Dragon Quest XI',
+                            'Dragon Quest XI: Ecos de un Pasado Perdido es mi juego favorito actualmente. Siempre he sido fan de la saga Dragon Quest, pero este juego me fascino en todos los sentidos. Como se puede apreciar mi genero preferido es el RPG, aunque me gustan casi todos los generos.'
+                        );">
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="studies" class="sections">
-            <h3>Estudios</h3>
-            <div>
+            <div id="studies">
                 <div id="places">
-                    <h4>¿Dónde he estudiado?</h4>
+                    <h3>¿Dónde he estudiado?</h3>
                     <div><span>Instituto: </span>
                         <p>IES la Mola</p>
                     </div>
@@ -109,7 +107,7 @@
                 </div>
 
                 <div id="qualification">
-                    <h4>Asignaturas con matrícula de honor</h4>
+                    <h3>Asignaturas con matrícula de honor</h3>
                     <div id="mh" class="flex-Center">
                         <div >
                             <p>Estructura de Datos y Algoritmia</p>
@@ -141,7 +139,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section id="habilities" class="sections flex-Center">
