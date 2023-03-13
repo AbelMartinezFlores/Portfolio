@@ -6,6 +6,8 @@ function modoOscuro(){
     style.setProperty('--underlined','rgba(255, 255, 255, 0.301)');
     style.setProperty('--leter-first-color','white');
     style.setProperty('--leter-second-color','black');
+
+    wave1.src = "svg/wave-dark.png";
 }
 
 function modoClaro(){
@@ -16,12 +18,20 @@ function modoClaro(){
     style.setProperty('--underlined','rgb(155 146 146)');
     style.setProperty('--leter-first-color','black');
     style.setProperty('--leter-second-color','white');
+
+    wave1.src = "svg/wave-light.png";
+
 }
 
 //comprobacion inicial para detectar el modo del usuairo por defecto
 const style =document.documentElement.style;
 const checkbox = document.querySelector(".switch > input");
 const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+
+//hola de cambio-dates-habilities
+const wave1 = document.querySelector("#wave-dates-habilities");
+
 
 if(prefersDark){
     modoOscuro();

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel=stylesheet type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/animaciones.css">
     <script src="https://kit.fontawesome.com/5f15527a0f.js" crossorigin="anonymous"></script>
 
 </head>
@@ -33,8 +34,8 @@
     </header>
 
     <div id="app">
-        <section id="section1" class="sections flex-Center">
-            <div id="information" class="flex-Center">
+        <section id="section1" class="sections flex-Center seccionPar ">
+            <div id="information" class="flex-Center roll-in-left">
                 <h2>Abel Martinez</h2>
                 <p>Estudiante de Ingeniería Multimedia apasionado por el diseño</p>
                 <span>Front-end Developer</span>
@@ -45,11 +46,15 @@
                     <a href="https://www.instagram.com/amfchair/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
                 </div>
             </div>
-            <img id="user-logo" src="./img/user.png" alt="user">
-            <div id="circle-banner">
+            <img id="user-logo" src="./img/user.png" alt="user" class="roll-in-right">
+
         </section>
 
-        <section id="about" class="sections flex-Center">
+        <div class="cambio-section" id="cambio-information-dates">
+            <div class="triangulo"></div>
+        </div>
+
+        <section id="about" class="sections flex-Center seccionImpar">
 
             <div>
                 <div id="dates">
@@ -113,6 +118,9 @@
                             <p>Estructura de Datos y Algoritmia</p>
                         </div>
                         <div>
+                            <p>Dispositivos e Infraestructuras para Sistemas Multimedia</p>
+                        </div>
+                        <div>
                             <p>Sistemas Distribuidos</p>
                         </div>
                         <div>
@@ -128,6 +136,9 @@
                             <p>Sistemas Operativos</p>
                         </div>
                         <div>
+                            <p>Compresión y Seguridad</p>
+                        </div>
+                        <div>
                             <p>Estadística</p>
                         </div>
                         <div>
@@ -136,12 +147,17 @@
                         <div>
                             <p>Matemáticas básicas</p>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="habilities" class="sections flex-Center">
+        <div class="cambio-section" id="cambio-dates-habilities">
+            <img id="wave-dates-habilities" src="" alt="">
+        </div>
+
+        <section id="habilities" class="sections flex-Center seccionPar">
             <h3>Habilidades web</h3>
             <div class="grups">
                 <h4>Front-end</h4>
@@ -226,7 +242,12 @@
 
         </section>
 
-        <section id="contact" class="sections">
+        <div class="cambio-section" id="cambio-habilities-contact">
+        </div>
+
+        
+
+        <section id="contact" class="sections seccionImpar">
             <h3>Contacto</h3>
             <form name="contact" data-netlify="true" method="POST">
 
